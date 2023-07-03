@@ -3,6 +3,7 @@ import HomePages from '../pages/HomePages.vue'
 import DetailContent from '../pages/DetailContent.vue'
 import CategoryPages from '../pages/HomePages.vue'
 import HomeFavorite from '../pages/HomeFavorite.vue'
+import AddFav from '../pages/AddFav.vue'
 
 
 const router = createRouter({
@@ -32,6 +33,13 @@ const router = createRouter({
         name: 'Favorite',
         component: HomeFavorite  
     },
+
+    {
+
+      path: '/addfav',
+      name: 'AddFav',
+      component: AddFav  
+  },
   ]
 })
 

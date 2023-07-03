@@ -23,7 +23,7 @@ export default {
 
 
   <div class="flex justify-center relative top-[38vh]">
-    <router-link to="/add-fav">
+    <router-link to="/addfav">
       <img src="src/assets/Add.svg" alt="tambah ">
       <p class="flex ms-[15px] mt-[45px]  text-2xl font-dsc font-semibold">Empty</p>
     </router-link>
