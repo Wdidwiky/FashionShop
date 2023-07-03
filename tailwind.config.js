@@ -3,7 +3,6 @@ export default {
   content: ["./index.html",
   "./src/**/*.{vue,js,ts,jsx,tsx}",],
   theme: {
-<<<<<<< HEAD
     extend: {},
     colors: {
       transparent: 'transparent',
@@ -32,15 +31,6 @@ export default {
     }
 
     
-=======
-    extend: {
-      
-      fontFamily: {
-        dsc: ['Plus Jakarta Sans', 'sans-serif']
-      },
-
-    },
->>>>>>> wildan
   },
   plugins: [],
 }

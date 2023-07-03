@@ -9,10 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "swiper": "^9.4.1",
-=======
->>>>>>> wildan
     "vue": "^3.2.47",
     "vue-router": "^4.2.2"
   },

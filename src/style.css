@@ -1,11 +1,7 @@
 @tailwind base;
 @tailwind components;
-<<<<<<< HEAD
 @tailwind utilities;
 
 body{
     background-color: #F4F4F4;
 }
-=======
-@tailwind utilities;
->>>>>>> wildan
