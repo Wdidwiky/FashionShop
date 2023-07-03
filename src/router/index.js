@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePages from '../pages/HomePages.vue'
 import DetailContent from '../pages/DetailContent.vue'
+import CategoryPages from '../pages/HomePages.vue'
 
 
 const router = createRouter({
@@ -10,12 +11,21 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomePages
+      
     },
+    
+    {
+      path: '/category/',
+      name: 'category',
+      component: CategoryPages,
+      // props: true
+    },
+    
     {
         path: '/detail',
         name: 'detail',
         component: DetailContent
-      },
+    },
     
   ]
 })

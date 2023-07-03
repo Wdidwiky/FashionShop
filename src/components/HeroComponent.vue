@@ -46,7 +46,7 @@
         />
       </SwiperSlide>
     </Swiper>
-    <div class="relative category ms-10">
+    <!-- <div class="relative category ms-10">
       <div class="absolute left-0 flex mt-20">
         <span
           class="absolute font-medium text-white left-20 font-desc text-title top-3"
@@ -104,7 +104,7 @@
           />
         </button>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>

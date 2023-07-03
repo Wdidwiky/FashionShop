@@ -1,8 +1,6 @@
-<script>
-
-</script>
+<script></script>
 <template>
-    <div class="container">
+  <div class="container">
     <div class="mt-8 columns-3 ms-20">
       <router-link to="/detail">
         <img
@@ -45,5 +43,4 @@
     </div>
   </div>
 </template>
-<style>
-</style>
+<style></style>

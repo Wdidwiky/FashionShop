@@ -1,4 +1,8 @@
-<script></script>
+<script>
+  // export default{
+  //   props: name
+  // }
+</script>
 
 <template>
   <!-- <div class="grid grid-flow-col grid-rows-4 gap-4">
