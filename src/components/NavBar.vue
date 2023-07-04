@@ -1,6 +1,4 @@
-<script>
-  
-</script>
+<script></script>
 
 <template>
   <nav>
@@ -34,12 +32,12 @@
         </div>
         <router-link to="/favorite">
           <img
-          src="src/assets/navBarAssets/Bookmark.svg"
-          alt="bookmark"
-          class="p-10"
-        />
+            src="src/assets/navBarAssets/Bookmark.svg"
+            alt="bookmark"
+            class="p-10"
+          />
         </router-link>
-        
+
         <button
           class="text-white bg-dark font-desc py-3 px-3 w-[170px] h-11 flex justify-center rounded-lg"
         >
