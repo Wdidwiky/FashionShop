@@ -1,9 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePages from '../pages/HomePages.vue'
-import DetailContent from '../pages/DetailContent.vue'
+import DetailContentHome from '../pages/DetailContentHome.vue'
 import CategoryPages from '../pages/HomePages.vue'
 import HomeFavorite from '../pages/HomeFavorite.vue'
 import AddFav from '../pages/AddFav.vue'
+import login from '../pages/LoginHome.vue'
+import signup from '../pages/LoginHome.vue'
 
 
 const router = createRouter({
@@ -13,6 +15,18 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomePages
+    },
+
+    {
+      path: '/login',
+      name: 'login',
+      component: login
+    },
+
+    {
+      path: '/signup',
+      name: 'signup',
+      component: signup
     },
     
     {
@@ -25,7 +39,7 @@ const router = createRouter({
     {
         path: '/detail',
         name: 'detail',
-        component: DetailContent
+        component: DetailContentHome
     },
     {
 

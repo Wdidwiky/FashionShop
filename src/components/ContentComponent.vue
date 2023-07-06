@@ -4,7 +4,7 @@ export default {
   name: "ContentComponent",
   data(){
     return{
-      dataProduct:[],
+      style:[],
       gambar_url:''
     };
   },
@@ -12,13 +12,15 @@ export default {
   mounted() {
     axios.get("http://127.0.0.1:8000/api/style")
     .then(Response => {
-      this.dataProduct= Response.data;
+      this.style= Response.data;
       console.log(Response)
     })
     .catch(err => {
       console.error('Error:', err);
     })
   },
+  
+  
 };
 </script>
 
@@ -34,8 +36,8 @@ export default {
       Casual
     </p>
     <div class="mt-8 columns-3 ms-20">
-      <div v-if="dataProduct">
-        <div v-for="style in dataProduct" >
+      <div v-if="style">
+        <div v-for="style in style" >
           <router-link to="/detail">
           <img
             class="w-[390px] h-[582px] rounded-[34px] object-cover"
