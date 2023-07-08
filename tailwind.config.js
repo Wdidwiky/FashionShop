@@ -11,6 +11,8 @@ export default {
       grey : '#8D8D8D',
       white : '#FFFFFF',
       secondGrey: '#F4F4F4',
+      white1 : '#c5d0d4',
+      white2 : '#ced1d2',
 
     },
 

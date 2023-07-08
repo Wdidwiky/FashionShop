@@ -4,6 +4,9 @@ import DetailContent from '../pages/DetailContent.vue'
 import CategoryPages from '../pages/HomePages.vue'
 import HomeFavorite from '../pages/HomeFavorite.vue'
 import AddFav from '../pages/AddFav.vue'
+import Dashboard from '../components/Dashboard.vue'
+import Index from '../components/Index.vue'
+import AddComponent from '../components/AddComponent.vue'
 
 
 const router = createRouter({
@@ -14,32 +17,49 @@ const router = createRouter({
       name: 'home',
       component: HomePages
     },
-    
+
     {
       path: '/category/',
       name: 'category',
       component: CategoryPages,
       // props: true
     },
-    
+
     {
-        path: '/detail',
-        name: 'detail',
-        component: DetailContent
+      path: '/detail',
+      name: 'detail',
+      component: DetailContent
     },
     {
 
-        path: '/favorite',
-        name: 'Favorite',
-        component: HomeFavorite  
+      path: '/favorite',
+      name: 'Favorite',
+      component: HomeFavorite
     },
 
     {
 
       path: '/addfav',
       name: 'AddFav',
-      component: AddFav  
-  },
+      component: AddFav
+    },
+
+    {
+
+      path: '/dashboard',
+      name: 'Dashboard',
+      component: Dashboard
+    },
+    {
+      path: '/dashboard/add',
+      name: 'index',
+      component: Index
+    },
+    {
+      path: '/dashboard/addComponent/:id',
+      name: 'AddComponent',
+      component: AddComponent
+    },
   ]
 })
 
