@@ -33,13 +33,14 @@ const router = createRouter({
       path: '/category/',
       name: 'category',
       component: CategoryPages,
-      // props: true
+       props: true
     },
     
     {
-        path: '/detail',
+        path: '/detail/:id',
         name: 'detail',
-        component: DetailContentHome
+        component: DetailContentHome,
+        props: true,
     },
     {
 
