@@ -1,8 +1,16 @@
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      isLoggedIn: false,
+    };
+  },
+};
+</script>
 
 <template>
-  <nav>
-    <div class="container relative flex justify-center">
+  <nav :class="{'logged-in': isLoggedIn, 'not-logged-in': !isLoggedIn}">
+    <div class="container flex justify-center w-full">
       <img
         src="src/assets/navBarAssets/logo_web.svg"
         alt="logo"
@@ -30,22 +38,38 @@
             placeholder="Search"
           />
         </div>
-        <router-link to="/favorite">
+
+        <button v-if="isLoggedIn">
           <img
             src="src/assets/navBarAssets/Bookmark.svg"
             alt="bookmark"
             class="p-10"
           />
-        </router-link>
-
-        <button
-          class="text-white bg-dark font-desc py-3 px-3 w-[170px] h-11 flex justify-center rounded-lg"
+          <div>
+            <div class="model-login">
+              <login />
+            </div>
+          </div>
+        </button>
+        <router-link to="/login">
+          <button
+          class="text-white bg-dark font-display py-3 px-3 w-[170px] h-11 flex justify-center rounded-lg ms-5"
         >
           Log In
         </button>
+        </router-link>
+        
       </div>
     </div>
   </nav>
 </template>
 
-<style></style>
+<style>
+  .logged-in{
+    margin-top: 0.5rem;
+  }
+
+  .not-logged-in{
+    margin-top: 2rem;
+  }
+</style>
